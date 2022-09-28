@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <img src="logo.svg" alt="logo" class="logo" /> -->
+      <h1>LOGO</h1>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="cta"><button>Contact</button></a>
+    </header>
+
+    <div class="form-wrapper">
+      <form action="form.php" method="POST">
+        <section id="form-title">
+          <h2>Fill in the details</h2>
+        </section>
+
+        <section id="property-info">
+          <h3>Property information</h3>
+
+          <div class="frm-row" id="property-image">
+            <label for="property-image">Attach an image :</label>
+            <input type="file" id="propertyImage" name="property-image" />
+          </div>
+
+          <div class="frm-row" id="property-type">
+            <label for="property-type">Property type :</label>
+            <select name="property-type" id="property-type">
+              <optgroup label="Land properties">
+                <option value="agricultural-land">Agricultural</option>
+                <option value="residential-land">Residential</option>
+                <option value="commercial-land">Commercial</option>
+                <option value="other">Other</option>
+              </optgroup>
+              <option value="house">House</option>
+              <option value="appartment">Appartment</option>
+              <option value="commercial-building">Commercial properties</option>
+            </select>
+          </div>
+
+          <div class="frm-row" id="property-size">
+            <label for="property-size-unit">Property size :</label>
+            <input type="number" name="property-size-unit" />
+            <label for="property-size-unit">Unit :</label>
+
+            <select name="property-unit" id="property-size-unit">
+              <option value="perch">perch</option>
+              <option value="acres">acres</option>
+              <option value="square-m">square meters</option>
+            </select>
+          </div>
+
+          <div class="frm-row" id="property-price">
+            <label for="property-price">Price :</label>
+            <input type="number" name="property-price" />
+            <label for="property-price-currency">Currency :</label>
+            <select name="property-price-currency" id="property-price-currency">
+              <option value="lkr">LKR</option>
+              <option value="usd">USD</option>
+            </select>
+          </div>
+
+          <div class="frm-row" id="property-location">
+            <label for="property-location">Location :</label>
+            <select name="property-location" id="property-location">
+              <option value="gampaha">Gampaha</option>
+              <option value="colombo">Colombo</option>
+              <option value="kandy">Kandy</option>
+            </select>
+          </div>
+
+          <div class="frm-row" id="property-description">
+            <label for="property-description">Description :</label>
+            <textarea
+              placeholder="Type your property description here"
+              name="property-description"
+              id="property-description-txt"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="frm-row" id="is-property-negotiable">
+            <label for="is-property-negotiable">Negotiable :</label>
+            <input type="checkbox" name="is-property-negotiable" value="true" />
+          </div>
+        </section>
+
+        <section id="seller-info">
+          <h3>Seller's information</h3>
+          <div class="frm-row" id="seller-name">
+            <label for="seller-name">Seller's name :</label>
+            <input type="text" name="seller-name" />
+          </div>
+
+          <div class="frm-row" id="seller-contact-no">
+            <label for="seller-contact-no">Contact :</label>
+            <input type="number" name="seller-contact-no" />
+          </div>
+        </section>
+		
+		<section id="seller-info2">
+          <h3>Please input Your Username and password</h3>
+          <div class="frm-row" id="user-name">
+            <label for="user-name">User name :</label>
+            <input type="text" name="user-name" />
+          </div>
+
+          <div class="frm-row" id="password">
+            <label for="password">password :</label>
+            <input type="password" name="password" />
+          </div>
+        </section>
+		
+        <div class="frm-row" id="btn-submit">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
